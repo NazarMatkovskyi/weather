@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.grid__item {
+  margin: 0 50px;
+  @media screen and (max-width: 490px) {
+    margin: 0 20px;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "Weather application",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others --names \"Express,React\" -c \"bgBlue.bold,bgMagenta.bold\" \"cd server && npm run watch\" \"cd client && npm run start\"",
+    "prod": "cd client && npm install && npm run build && npm run start",
+    "start": "cd server && npm install && npm run server",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrKirat/weather_app.git"
+  },
+  "author": "Taras Viyatyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrKirat/weather_app/issues"
+  },
+  "homepage": "https://github.com/MrKirat/weather_app#readme"
+}

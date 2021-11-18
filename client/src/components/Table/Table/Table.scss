@@ -1,0 +1,19 @@
+.table {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 5px;
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+
+  @media screen and (max-width: 490px) {
+    justify-content: space-evenly;
+    max-width: 350px;
+  }
+}
